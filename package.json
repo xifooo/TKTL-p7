@@ -1,0 +1,46 @@
+{
+  "name": "bloglst",
+  "version": "1.0.0",
+  "description": "博客列表应用，它允许用户保存他们在互联网上偶然发现的有趣博客的信息。对于每一个列出的博客，将保存作者、标题、网址和应用的用户加注的数量。",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "devTest": "cross-env NODE_ENV=test node server.js",
+    "lint": "eslint .",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit",
+    "start:test": "cross-env NODE_ENV=test node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xifooo/blogLst.git"
+  },
+  "author": "xifooo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xifooo/blogLst/issues"
+  },
+  "homepage": "https://github.com/xifooo/blogLst#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.35.0",
+    "jest": "^29.5.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
